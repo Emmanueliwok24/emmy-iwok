@@ -1,0 +1,375 @@
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+* {
+    font-family: poppins;
+}
+
+header {
+    background:
+        #F6F6F6;
+
+    .hero {
+        h1 {
+
+            font-size: 3.5rem;
+            font-weight: bolder;
+            color: #979797;
+        }
+
+        p {
+            color: #757575;
+        }
+
+        .btn {
+            background: #02A9F7;
+            color: white;
+        }
+    }
+}
+
+main {
+
+    #first-section {
+        flex-direction: column;
+        justify-content: center;
+
+        .container {
+            margin-top: 1rem;
+
+            >:first-child {
+                margin-bottom: 1rem;
+            }
+
+            .row {
+
+                .first-box {
+                    background: #FFECD9;
+
+                    h5 {
+                        color: #02A9F7;
+                    }
+                }
+
+                .second-box {
+                    background: #D8E7FD;
+
+                    h5 {
+                        color: #E5912C;
+                    }
+                }
+
+                .third-box {
+                    background: #B9C4E1;
+
+                    h5 {
+                        color: #FFFFFF;
+                    }
+                }
+
+                .box {
+                    padding: 2rem 1rem;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: .6rem;
+                    margin-bottom: 1rem;
+
+                    img {
+                        width: 45px;
+                    }
+                }
+            }
+        }
+    }
+
+    // second section
+
+    #second-section {
+        background: #FFF8E7;
+
+        .container-txt {
+            display: grid;
+            align-items: center;
+            grid-template-areas: "a a b b";
+
+            img {
+                grid-area: a;
+            }
+
+            .txt-section {
+                grid-area: b;
+                width: 100%;
+
+                h1 {
+                    color: #01557C;
+                    font-weight: bold;
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+
+                .content {
+
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    font-size: 1.2rem;
+                    margin-bottom: 1rem;
+
+                    >:first-child {
+                        font-weight: bolder;
+                        color: #525252;
+                    }
+
+                    .sec-list {
+                        display: grid;
+                        color: #525252d0;
+
+                        span {
+                            color: #E07B02;
+                            font-weight: bolder;
+                            margin-bottom: .2rem;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    // third section
+    #third-section {
+
+        .container {
+            .section-header {
+
+                >h2 {
+                    color: #0171A5;
+                }
+            }
+
+            .row {
+                justify-content: space-evenly;
+                gap: 2rem;
+
+                .first-card {
+
+                    background: #F1F5FB;
+                    border-radius: 30px;
+
+                    h2 {
+
+                        justify-content: space-between;
+
+                        >:first-child {
+                            position: relative;
+                        }
+
+                        p {
+                            font-size: 3rem;
+                            font-weight: bold;
+                            color: black;
+
+                        }
+
+                        >:first-child::before {
+                            position: absolute;
+                            content: "";
+                            width: 2rem;
+                            height: 3px;
+                            bottom: 0;
+                            background-color: #0171A5;
+                        }
+
+                        small {
+                            display: block;
+                            font-size: .9rem;
+                        }
+                    }
+
+                    .btn {
+                        background-color: #0171A5;
+                        color: white;
+                    }
+                }
+
+                .second-card {
+
+                    background: #E5912C;
+                    color: white;
+                    border-radius: 30px;
+
+                    h2 {
+
+                        justify-content: space-between;
+
+                        >:first-child {
+                            position: relative;
+                        }
+
+                        p {
+                            font-size: 3rem;
+                            font-weight: bold;
+                            color: white;
+
+                        }
+
+                        >:first-child::before {
+                            position: absolute;
+                            content: "";
+                            width: 2rem;
+                            height: 3px;
+                            bottom: 0;
+                            background-color: #ffffff;
+                        }
+
+                        small {
+                            display: block;
+                            font-size: .9rem;
+                        }
+                    }
+
+                    .btn {
+                        background-color: white;
+                        color: #E5912C;
+                    }
+                }
+
+                .third-card {
+
+                    background: #0171A5;
+                    color: white;
+                    border-radius: 30px;
+
+                    h2 {
+
+                        justify-content: space-between;
+
+                        >:first-child {
+                            position: relative;
+                        }
+
+                        p {
+                            font-size: 3rem;
+                            font-weight: bold;
+                            color: white;
+
+                        }
+
+                        >:first-child::before {
+                            position: absolute;
+                            content: "";
+                            width: 2rem;
+                            height: 3px;
+                            bottom: 0;
+                            background-color: #ffffff;
+                        }
+
+                        small {
+                            display: block;
+                            font-size: .9rem;
+                        }
+                    }
+
+                    .btn {
+                        background-color: white;
+                        color: #0171A5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// accordion
+
+.accordion-section{
+    background: #FBE6EA;
+
+    .accordion-item .accordion-button,.accordion-collapse  {
+        background: #FBE6EA !important;
+      }
+}
+
+// footer
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+
+    li{
+        color: rgb(0, 0, 0);
+        transition: .2s linear;
+    }
+  }
+  .footer h5{
+    font-weight: 600;
+  }
+
+  .footer ul li:hover {
+    color: #000;
+    transform: translateX(3%);
+    cursor: pointer;
+  }
+@media screen and (max-width:768px) {
+
+    header {
+        .hero {
+            .row{
+                :first-child{
+
+                    width: 100%;
+                    h1 {
+                        font-size: 2.5rem;
+                        text-align: center;
+                    }
+                    
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+
+        #second-section {
+
+            .container-txt {
+
+                display: grid;
+                grid-template-areas: "b" "a" !important;
+
+                img {
+                    width: 100%;
+                }
+
+                h1 {
+                    font-size: 1.4rem !important;
+                }
+            }
+
+        }
+
+
+        .txt-section {
+            h1 {
+                font-size: 2.5rem !important;
+            }
+        }
+        .accordion-img{
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+
+        .starter-img{
+            width: 100%;
+        }
+    }
+
+}
